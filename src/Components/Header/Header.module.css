@@ -23,3 +23,21 @@
 span {
     padding-right: 20px;
 }
+
+@media screen and (max-width: 380px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        border: solid black 1px;
+        background: linear-gradient(90deg, #736161 1.18%, #d72323 100%);
+        align-items: center;
+        margin: 0 auto;
+        width: 380px;
+        height: 100px;
+        color: white;
+        font-family: 'Roboto', sans-serif
+    }
+    span {
+        display: none;
+    }
+}

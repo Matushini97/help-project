@@ -7,6 +7,7 @@ main {
 }
 
 .form {
+
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
@@ -15,6 +16,7 @@ main {
 }
 
 .formInput {
+    outline: none;
     border: 1px solid black;
     border-radius: 5px;
 
@@ -73,4 +75,13 @@ main {
 
 .bottom {
     bottom: 0;
+}
+
+@media screen and (max-width: 380px) {
+    main {
+        position: absolute;
+        height: 100vh;
+        width: 376px;
+        padding: 2px;
+    }
 }
