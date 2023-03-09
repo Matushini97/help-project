@@ -15,8 +15,6 @@ Map over the thingsArray to generate a `p` element for each item and render them
 
 `Challenge2:`
 
-Add an event listener to the button so when it is clicked, it adds another thing to our array
+Add an event listener to the `button` so when it is clicked, it adds/delete/delete chosen thing in our `array`
 
-Hint: use the array `length + 1` to determine the number of the "Thing" being added. Also, have you event listener `console.log(thingsArray)` after adding the new item to the array.
-Spoiler: the page won't update when new things get added to the array!
--------------------------------------------------------------------
+-----------------------------------------------------------------
