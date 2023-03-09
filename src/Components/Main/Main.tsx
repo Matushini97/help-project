@@ -82,6 +82,7 @@ const Main = () => {
                 <h2 className={`${s.memeText} ${s.top}`}>{meme.topText}</h2>
                 <h2 className={`${s.memeText} ${s.bottom}`}>{meme.bottomText}</h2>
             </div>
+
         </main>
     );
 };

@@ -77,11 +77,12 @@ main {
     bottom: 0;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 380px) and (max-width: 768px) {
     main {
         position: absolute;
         height: 100vh;
         width: 376px;
         padding: 2px;
+        border: none;
     }
 }
