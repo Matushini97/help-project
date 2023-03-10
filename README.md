@@ -1,7 +1,8 @@
 # #Welcome to Samurai Help
 
-This project was inspired by [Bob Ziroll](https://twitter.com/bobziroll) 
-and his [Scrimba "Learn React" course](https://scrimba.com/learn/learnreact)
+=> [fetch method MDN](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
+
+
 
 ## #Летим 🚀🚀🚀
 
