@@ -1,11 +1,11 @@
 import React from 'react';
 
-type MainPorpsType = {
-    darkMode: boolean
+// type MainPorpsType = {
+//     darkMode: any
+//
+// }
 
-}
-
-const Main = (props: MainPorpsType) => {
+const Main = (props) => {
     return (
         <main className={props.darkMode ? "dark" : ""}>
             <h1 className="main--title">Fun facts about React</h1>

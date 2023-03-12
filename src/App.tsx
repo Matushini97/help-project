@@ -6,20 +6,13 @@ import Main from "./Components/Main"
 
 
 function App() {
-    const [darkMode, setDarkMode] = useState(true)
 
-    const toggleDarkMode = () => {
-        setDarkMode(prevMode => !prevMode)
-    }
-
+t
 
     return (
         <div className='container'>
-            <Navbar
-                darkMode={darkMode}
-                toggleDarkMode={toggleDarkMode}
-            />
-            <Main darkMode={darkMode} />
+            <Navbar />
+            <Main  />
         </div>
   );
 }

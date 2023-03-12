@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from '../images/react-icon-small.png'
 
-type NavbarPorpsType = {
-    darkMode: boolean
-    toggleDarkMode: () => void
-}
+// type NavbarPorpsType = {
+//     darkMode: any
+//     toggleDarkMode: any
+// }
 
-const Navbar = (props: NavbarPorpsType) => {
+const Navbar = (props) => {
     return (
         <nav className={props.darkMode ? "dark": ""}>
             <img className="nav--logo_icon" src={logo}/>
