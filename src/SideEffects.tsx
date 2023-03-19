@@ -1,24 +1,44 @@
 import React, {useEffect, useState} from 'react';
 
 
+type DataType ={
+    birth_year: string
+    created: string
+    edited:  string
+    eye_color: string
+    films: Array<string>
+    gender: string
+    hair_color: string
+    height: string
+    homeworld: Array<string>
+    mass: string
+    name: string
+    skin_color: string
+    species: string
+    starships: string
+    url: string
+    vehicles: Array<string>
+}
+
 const SideEffects = () => {
 
-    const [starWarsData, setStarWarsData] = useState({})
+    const [starWarsData, setStarWarsData] = useState<DataType>()
     const [count, setCount] = React.useState(0)
 
     useEffect(() => {
-        console.log('effect run')
+
         fetch(`https://swapi.dev/api/people/${count}`)
             .then(res => res.json())
             .then(data => setStarWarsData(data))
     }, [count])
-    // console.log('rendered')
+
+
     return (
         <div>
-            <h2>The count is {count}</h2>
+            <h2>Star Wars character ID: {count}</h2>
+            <h3>The name is {starWarsData?.name}</h3>
             <button onClick={() => setCount(prevCount => prevCount + 1)}>Add</button>
-            <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
-
+            <pre>{JSON.stringify(starWarsData, null, 5)}</pre>
         </div>
     );
 };
